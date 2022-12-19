@@ -6,10 +6,6 @@ body {
   font-family: sans-serif;
 }
 
-img {
-  max-width: 100%;
-}
-
 .flex {
   display: flex;
 }
@@ -18,8 +14,12 @@ img {
   justify-content: space-between;
 }
 
-.flex > div {
+.flex>div {
   flex: 1;
+}
+
+.flex>div>img {
+  max-width: 100%;
 }
 
 /* PRODUCT */
@@ -41,19 +41,22 @@ img {
 .sale {
   background-color: #ec2f2f;
   color: #fff;
-  font-size: 1vw;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 2px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 8vw;
+  min-height: 4vw;
   position: absolute;
-  padding: 3vw;
-  margin: 0;
-  width: 8%;
-  height: 8%;
   top: -4%;
   left: -4%;
+}
+
+.sale>p {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5vh;
+  letter-spacing: 2px;
 }
 
 .product-price {
@@ -63,7 +66,7 @@ img {
 
 .colors {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 }
 
 .color {

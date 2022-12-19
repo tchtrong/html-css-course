@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Grid</title>
     <style>
@@ -14,7 +14,6 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -40,6 +39,11 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        row-gap: 10px;
+        column-gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
       }
 
       .container--2 {
@@ -53,6 +57,7 @@
         height: 600px;
 
         /* CSS GRID */
+        display: none;
       }
     </style>
   </head>
